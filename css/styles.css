@@ -1,0 +1,42 @@
+:root {
+  --web: #2196f3;
+  --bgc1: #ffff;
+  --bgc2: #2f303a;
+  --bgc3: #f5f4fa;
+  --txth: #212121;
+  --txt: #757575;
+}
+
+body {
+  background-color: var(--bgc1);
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--web);
+}
+
+.logoblack {
+  color: #000000;
+}
+
+.logowhite {
+  color: var(--bgc1);
+}
+
+.effective {
+  background-color: var(--bgc2);
+  color: var(--bgc1);
+  width: 1600px;
+  height: 600px;
+}
+
+h1 {
+  display: flex;
+}
