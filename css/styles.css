@@ -10,6 +10,7 @@
 body {
   background-color: var(--bgc1);
   font-family: 'Roboto', sans-serif;
+  position: absolute;
 }
 
 header {
@@ -38,5 +39,17 @@ header {
 }
 
 h1 {
+  display: flex;
+}
+
+article h3 {
+  color: var(--txth);
+}
+
+article p {
+  color: var(--txt);
+}
+
+.our-work {
   display: flex;
 }
