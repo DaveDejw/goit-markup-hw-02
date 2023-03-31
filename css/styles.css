@@ -5,6 +5,7 @@
   --bgc3: #f5f4fa;
   --txth: #212121;
   --txt: #757575;
+  --txt2: #000000;
   --border: #ececec;
   --clink: rgba(255, 255, 255, 0.6);
 }
@@ -35,17 +36,19 @@ header {
   color: var(--web);
   margin: 24px 215px 25px 93px;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .logoblack {
-  color: #000000;
+  color: var(--txt2);
 }
 
 .logowhite {
   color: var(--bgc1);
 }
 
-nav {
+.nav {
   width: 254px;
   height: 16px;
   left: 453px;
@@ -55,9 +58,10 @@ nav {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--txth);
 }
 
-nav :is(:hover, :active, :focus) {
+.nav:is(:hover, :active, :focus) {
   color: var(--web);
   font-weight: 500;
   line-height: 1.1;
@@ -88,15 +92,18 @@ nav :is(:hover, :active, :focus) {
   background: var(--web);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-family: 'Roboto';
   font-weight: 700;
   line-height: 188%;
   letter-spacing: 0.06em;
+  border-style: none;
+  cursor: pointer;
 }
 
-.order:is(:focus, :hover, :active) {
+/* .order:is(:focus, :hover, :active) {
   color: var(--txth);
   background-color: var(--bgc3);
-}
+} */
 
 article h3 {
   color: var(--txth);
@@ -132,6 +139,7 @@ article p {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
+  border-style: none;
 }
 
 .selectbutton:is(:focus, :hover, :active) {
@@ -164,6 +172,7 @@ footer {
 
 .address {
   color: var(--bgc3);
+  font-style: normal;
 }
 
 .addresslink {
@@ -171,21 +180,21 @@ footer {
 }
 
 .addresslink:is(:hover, :active, :focus) {
-  color: var(--bgc1);
+  color: var(--web);
 }
 
 .contact {
   text-align: right;
 }
 
-article h3 {
-  color: var(--txth);
-}
 
-article p {
+.contactlink {
   color: var(--txt);
 }
 
-.our-work {
-  display: flex;
+.contactlink:is(:hover, :active, :focus) {
+  color: var(--web);
 }
+
+
+
