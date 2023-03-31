@@ -7,34 +7,34 @@
 
     <title>WebStudio</title>
 
-    <link href="css\styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
+    <link href="css\styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <a href="index.html" class="logo">Web<span class="logoblack">Studio</span></a>
       <nav>
         <ul>
-          <li><a href="#">Agencja</a></li>
-          <li><a href="porfolio.html">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a class="nav" href="index.html">Agencja</a></li>
+          <li><a class="nav" href="porfolio.html">Portfolio</a></li>
+          <li><a class="nav" href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
+      <div class="contact">
+        <a class="contactlink" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contactlink" href="tel:+48111111111">+48 111 111 111</a>
       </div>
     </header>
     <main>
       <!--Tytuł-->
       <section class="effective">
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
+        <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button type="button" class="order">Zamów usługe</button>
       </section>
       <!--Nasze atuty-->
       <section>
@@ -102,16 +102,16 @@
         </div>
       </section>
       <!--Nasz zespół-->
-      <section>
+      <section class="our-team">
         <ul>
-          <li>
+          <li class="person1">
             <img src="images\productdesigner.jpg" alt="zdjęcie John Doe" width="270" height="260" />
             <div>
               <h4>John Doe</h4>
               <span>Product Designer</span>
             </div>
           </li>
-          <li>
+          <li class="person2">
             <img
               src="images\frontenddeveloper.jpg"
               alt="zdjęcie John Doe"
@@ -123,14 +123,14 @@
               <span>Frontend Developer</span>
             </div>
           </li>
-          <li>
+          <li class="person3">
             <img src="images\marketing.jpg" alt="zdjęcie John Doe" width="270" height="260" />
             <div>
               <h4>John Doe</h4>
               <span>Marketing</span>
             </div>
           </li>
-          <li>
+          <li class="person4">
             <img src="images\uidesigner.jpg" alt="zdjęcie John Doe" width="270" height="260" />
             <div>
               <h4>John Doe</h4>
@@ -141,11 +141,13 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="logo">Web<span class="logowhite">Studio</span></a>
+      <a href="index.html" class="logo">Web<span class="logowhite">Studio</span></a>
       <address>
-        <a href="https://goo.gl/maps/aT87wqd7mdmXVQNg7"> m. Warszawa, Aleje Jerozolimskie 21</a>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
+        <a href="https://goo.gl/maps/aT87wqd7mdmXVQNg7" class="address">
+          m. Warszawa, Aleje Jerozolimskie 21</a
+        >
+        <a href="mailto:info@devstudio.com" class="addresslink">info@devstudio.com</a>
+        <a href="tel:+48111111111" class="addresslink">+48 111 111 111</a>
       </address>
     </footer>
   </body>

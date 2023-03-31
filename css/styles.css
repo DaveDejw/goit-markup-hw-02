@@ -5,6 +5,9 @@
   --bgc3: #f5f4fa;
   --txth: #212121;
   --txt: #757575;
+  --txt2: #000000;
+  --border: #ececec;
+  --clink: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -13,33 +16,183 @@ body {
   position: absolute;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
   display: flex;
+  justify-content: space-around;
+  height: 80px;
+  border-bottom: 1px solid var(--border);
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: var(--web);
+  margin: 24px 215px 25px 93px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .logoblack {
-  color: #000000;
+  color: var(--txt2);
 }
 
 .logowhite {
   color: var(--bgc1);
 }
 
+.nav {
+  width: 254px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--txth);
+}
+
+.nav:is(:hover, :active, :focus) {
+  color: var(--web);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
 .effective {
   background-color: var(--bgc2);
   color: var(--bgc1);
-  width: 1600px;
   height: 600px;
+  text-align: center;
 }
 
-h1 {
-  display: flex;
+.h1 {
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  color: var(--bgc3);
+  background: var(--web);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* .order:is(:focus, :hover, :active) {
+  color: var(--txth);
+  background-color: var(--bgc3);
+} */
+
+article h3 {
+  color: var(--txth);
+}
+
+article p {
+  color: var(--txt);
+}
+
+.our-work {
+  border-left: 30px;
+  border-right: 30px;
+}
+
+.our-team {
+}
+.person1 {
+}
+.person2 {
+}
+.person3 {
+}
+.person4 {
+}
+
+.selectbutton {
+  width: 93px;
+  height: 38px;
+  background: var(--bgc3);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  border-style: none;
+}
+
+.selectbutton:is(:focus, :hover, :active) {
+  background-color: var(--web);
+  color: var(--bgc1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.products-h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+
+.porducts-p {
+  color: var(--txt);
+  line-height: 188%;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  color: var(--bgc1);
+  background-color: var(--bgc2);
+  height: 252px;
+  text-decoration: none;
+}
+
+.address {
+  color: var(--bgc3);
+  font-style: normal;
+}
+
+.addresslink {
+  color: var(--clink);
+}
+
+.addresslink:is(:hover, :active, :focus) {
+  color: var(--web);
+}
+
+.contact {
+  text-align: right;
+}
+
+.contactlink {
+  color: var(--txt);
+}
+
+.contactlink:is(:hover, :active, :focus) {
+  color: var(--web);
 }
 
 article h3 {
